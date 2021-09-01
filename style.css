@@ -1,0 +1,54 @@
+body{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    /*=== pushdown the wrapper by half the page====*/
+    margin: 50% 0 0 0;
+    position: relative;
+    background-image: url(sources/stars.jpeg);
+    
+     }
+/*------ dégradé-------*/
+body::after{
+    content:'';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background:linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+    background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0) 100%);
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    Margin: 0 auto;
+
+
+    
+    /*=== perspective ====*/
+    perspective: 450px
+}
+.scroll{
+ color: #ffc900;
+    font-size: 3vw;
+    text-align: justify;
+    font-weight: bold;
+    position: relative;
+    animation: scroll 60s linear forwards;
+    
+    /*perspective
+    transform: translateZ(-2500px) rotate;*/
+}
+img{
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+h1{
+    text-align: center;
+}
+
+@keyframes scroll {
+    from { top: 0; transform: translateZ(0) rotateX(20deg)}
+    to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg)}
+}

@@ -10,3 +10,5 @@ This is Scroll view like Star Wars opening crawl.
 
 [Go to the link](https://saralaloux.github.io/Starwars/)
 
+### Thanks
+
